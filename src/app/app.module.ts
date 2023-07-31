@@ -3,11 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeComponent } from './views/home/home/home.component';
+import { HomeComponent } from './views/home/home.component';
 import { NavComponent } from './components/shared/nav/nav.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { HeroComponent } from './components/shared/hero/hero.component';
+import { CarouselComponent } from './components/shared/carousel/carousel.component';
+import { ContactComponent } from './views/contact/contact.component';
+import { WorksComponent } from './views/works/works.component';
+import { MaterialModule } from './modules/material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutComponent } from './components/shared/about/about.component';
+import { CustomizeComponent } from './views/home/customize/customize.component';
+import { MultiWorkstationComponent } from './views/home/multi-workstation/multi-workstation.component';
+import { MultiplayComponent } from './views/home/multiplay/multiplay.component';
+import { ContactFormComponent } from './components/shared/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +24,21 @@ import { HeroComponent } from './components/shared/hero/hero.component';
     HomeComponent,
     NavComponent,
     FooterComponent,
-    HeroComponent
+    HeroComponent,
+    CarouselComponent,
+    ContactComponent,
+    WorksComponent,
+    AboutComponent,
+    CustomizeComponent,
+    MultiWorkstationComponent,
+    MultiplayComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
