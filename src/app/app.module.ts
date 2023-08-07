@@ -17,6 +17,7 @@ import { CustomizeComponent } from './views/home/customize/customize.component';
 import { MultiWorkstationComponent } from './views/home/multi-workstation/multi-workstation.component';
 import { MultiplayComponent } from './views/home/multiplay/multiplay.component';
 import { ContactFormComponent } from './components/shared/contact-form/contact-form.component';
+import { AboutLegoComponent } from './components/shared/about-lego/about-lego.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ContactFormComponent } from './components/shared/contact-form/contact-f
     CustomizeComponent,
     MultiWorkstationComponent,
     MultiplayComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    AboutLegoComponent
   ],
   imports: [
     BrowserModule,

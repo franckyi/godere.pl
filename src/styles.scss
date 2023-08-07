@@ -16,10 +16,16 @@ $my-typography: mat.define-typography-config(
   $display-3: mat.define-typography-level(56px, 56px, 500, $letter-spacing: -0.02em),
   $display-2: mat.define-typography-level(45px, 48px, 500, $letter-spacing: -0.005em),
   $display-1: mat.define-typography-level(34px, 40px, 500),
-  $headline: mat.define-typography-level(64px, 70px, 500),
-  $title: mat.define-typography-level(28px, 32px, 500),
-  $body-1: mat.define-typography-level(18px, 21px, 300),
-  $body-2: mat.define-typography-level(18px, 21px, 300),
+  $headline: mat.define-typography-level(64px, 70px, 700),
+  $title: mat.define-typography-level(48px, 52px, 300),
+  $body-1: mat.define-typography-level(
+    $font-family: 'Kanit',
+    $font-weight: 300,
+    $font-size: 24px,
+    $line-height: 2,
+    $letter-spacing: normal,
+  ),
+  $body-2: mat.define-typography-level(24px, 500),
   $button: mat.define-typography-level(18px, 21px, 300),
 );
 
@@ -53,18 +59,87 @@ $godere-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+// RESET
+html, body, *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; font-size: 10px;}
 
-body {
-  margin: 0;
-  font-family: "Kanit", sans-serif;
+// VARIABLES
+$color-primary: #ff1744;
+
+// TYPOGRAPHY
+h1, h2, h3, h4 {
+  color: $color-primary;
 }
 
-input,
-button,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+// SECTIONS
+.section {
+  padding: 5rem;
+}
+.about {
+  background: url(./assets/img/bg-black.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-lego {
+  background: url(./assets/img/bg-designer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.customize {
+  background: url(./assets/img/bg-black.jpg);
+  background-size: 150%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  .mat-list-item {
+    line-height: 1;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5rem;
+  }
+  .mat-icon {
+    margin-right: 5px;
+    color: $color-primary;
+  }
+  .mat-icon--big {
+    font-size: 70px;
+    color: $color-primary;
+  }
+}
+.multi-workstation {
+  .mat-list-item {
+    font-size: 24px;
+  }
+  .mat-icon {
+    color: $color-primary;
+    margin-right: 5px;
+  }
+}
+.multiplay {
+  background: url(./assets/img/bg-multiplay.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 640px;
+}
+.contact {
+  background: url(./assets/img/bg-red.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  a,
+  a:focus,
+  a:focus-visible,
+  a:active,
+  a:visited {
+    text-decoration: none;
+  }
+}
+.footer {
+  background: #232323;
+}
+
+// UI
+button.mat-button {
+  padding: 10px 25px;
+  border: 2px solid $color-primary;
 }
