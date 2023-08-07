@@ -1,7 +1,6 @@
 .hero {
     display: block;
     background: url(../../../assets/img/bg.jpg);
-    height: 100vh;
-    padding: 4rem;
+    min-height: 100vh;
     overflow: hidden;
 }

@@ -72,9 +72,6 @@ h1, h2, h3, h4 {
 }
 
 // SECTIONS
-.section {
-  padding: 5rem;
-}
 .about {
   background: url(./assets/img/bg-black.jpg);
   background-size: cover;
@@ -84,12 +81,16 @@ h1, h2, h3, h4 {
   background: url(./assets/img/bg-designer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .customize {
+  min-height: 100vh;
+  background: #222;
   background: url(./assets/img/bg-black.jpg);
-  background-size: 150%;
-  background-position: bottom;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
   font-size: 24px;
   .mat-list-item {
     line-height: 1;
@@ -107,8 +108,13 @@ h1, h2, h3, h4 {
   }
 }
 .multi-workstation {
+  img {
+    max-width: 100%;
+  }
   .mat-list-item {
     font-size: 24px;
+    line-height: 1;
+    margin-bottom: 5rem;
   }
   .mat-icon {
     color: $color-primary;
@@ -119,7 +125,8 @@ h1, h2, h3, h4 {
   background: url(./assets/img/bg-multiplay.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 640px;
+  background-attachment: fixed;
+  min-height: 640px;
 }
 .contact {
   background: url(./assets/img/bg-red.jpg);
@@ -132,6 +139,8 @@ h1, h2, h3, h4 {
   a:active,
   a:visited {
     text-decoration: none;
+    color: white;
+    font-weight: 500;
   }
 }
 .footer {

@@ -1,13 +1,15 @@
-// .dyno {
-//     float: right;
-//     position: relative;
-//     right: -20rem;
-// }
+.row {
+    z-index: 1;
+}
 
-// .pc {
-//     position: absolute;
-//     z-index: 9;
-//     right: 25rem;
-//     bottom: 0;
-//     width: 500px;
-// }
+.dyno {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.pc {
+    position: relative;
+    z-index: 1;
+}
