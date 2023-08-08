@@ -51,6 +51,9 @@ export class GrondBlackComponent implements OnInit {
     'automation of the Lego PC cooling process'
   ];
 
+  coolingComponentsCol1 = ['CPU', 'GPU', 'Second HDD', 'Automation controller'];
+  coolingComponentsCol2 = ['Reservoir', 'Flow meter', 'Radiator + 3 fans 140 mm', 'Pump', 'Couplings', 'Tubs'];
+
   images: number[] = [];
 
   constructor() {

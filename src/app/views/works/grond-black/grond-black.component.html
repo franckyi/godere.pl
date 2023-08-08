@@ -50,7 +50,7 @@
   </mat-list>
 </div>
 
-<div class="row text-center p-5">
+<div class="row p-5">
   <h2 class="my-5">Water Cooling</h2>
   <mat-list class="col-md-6 mat-typography">
     <mat-list-item *ngFor="let item of coolingCol1"><mat-icon matListItemIcon>wind_power</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
@@ -60,10 +60,21 @@
   </mat-list>
 </div>
 
-<div class="row mx-auto text-center p-5">
+<div class="row mx-auto p-5">
   <h2 class="my-5">Water Cooling System</h2>
   <mat-list class="col-md-8 mat-typography">
     <mat-list-item *ngFor="let item of coolingSystemList"><mat-icon matListItemIcon>air</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
   </mat-list>
   <img class="col-md-4" src="../../../../assets/img/cooling.png">
+</div>
+
+<div class="row p-5">
+  <mat-list class="col-md mat-typography">
+    <h2 class="my-5">Sub-components</h2>
+    <mat-list-item *ngFor="let item of coolingComponentsCol1"><mat-icon matListItemIcon>memory</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
+  </mat-list>
+  <mat-list class="col-md mat-typography">
+    <h2 class="my-5">Additional items:</h2>
+    <mat-list-item *ngFor="let item of coolingComponentsCol2"><mat-icon matListItemIcon>memory</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
+  </mat-list>
 </div>
