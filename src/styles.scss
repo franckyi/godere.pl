@@ -61,16 +61,23 @@ $godere-theme: mat.define-light-theme((
 
 // RESET
 html, body, *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { height: 100%; font-size: 10px;}
+html, body { height: 100%; font-size: 10px; }
 
 // VARIABLES
 $color-primary: #ff1744;
 
-// TYPOGRAPHY
+// COLOR
 h1, h2, h3, h4 {
   color: $color-primary;
 }
-
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: $color-primary;
+}
+::selection {
+  color: white;
+  background: $color-primary;
+}
 .mat-body-strong .mat-body-2 {
   color: $color-primary;
 }
@@ -168,7 +175,16 @@ button.mat-button {
   a:hover {
     background: #222;
   }
+}
 
+// Scrollbar
+html {
+  scrollbar-color: $color-primary #222;
+  scrollbar-width: 3rem;
+}
+
+body * {
+  overflow: hidden;
 }
 
 // LISTS
