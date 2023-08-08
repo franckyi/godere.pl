@@ -179,11 +179,6 @@ button.mat-button {
 
 // Scrollbar
 html {
-  scrollbar-color: $color-primary #222;
+  scrollbar-color: $color-primary rgba(0,0,0, 0.1);
   scrollbar-width: 3rem;
-}
-
-// LISTS
-.mat-list-base .mat-list-item {
-  height: initial;
 }
