@@ -83,10 +83,26 @@ h1, h2, h3, h4 {
 }
 
 // SECTIONS
-.about {
+.hero {
+  display: flex;
+  background: url(./assets/img/bg.jpg);
+  min-height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.about, .grond-black {
   background: url(./assets/img/bg-black.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+.grond-black {
+  background-position: bottom;
+  height: 640px;
+  & + div .triptic {
+    margin-top: -20px;
+  }
 }
 .about-lego {
   background: url(./assets/img/bg-designer.jpg);
@@ -162,6 +178,16 @@ button.mat-button {
   padding: 10px 25px;
   border: 2px solid $color-primary;
 }
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-icon-button {
+  position: relative;
+  z-index: 1;
+}
+
 .mat-menu-content {
   box-shadow: 0 0 15px rgba(0,0,0,.3);
   background-color: black;
@@ -171,6 +197,7 @@ button.mat-button {
   a:active,
   a:visited {
     color: $color-primary;
+    text-transform: uppercase;
   }
   a:hover {
     background: #222;

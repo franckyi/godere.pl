@@ -18,6 +18,7 @@ import { MultiWorkstationComponent } from './views/home/multi-workstation/multi-
 import { MultiplayComponent } from './views/home/multiplay/multiplay.component';
 import { ContactFormComponent } from './components/shared/contact-form/contact-form.component';
 import { AboutLegoComponent } from './components/shared/about-lego/about-lego.component';
+import { GrondBlackComponent } from './views/works/grond-black/grond-black.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AboutLegoComponent } from './components/shared/about-lego/about-lego.co
     MultiWorkstationComponent,
     MultiplayComponent,
     ContactFormComponent,
-    AboutLegoComponent
+    AboutLegoComponent,
+    GrondBlackComponent
   ],
   imports: [
     BrowserModule,
