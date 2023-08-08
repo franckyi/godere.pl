@@ -1,7 +1,14 @@
 <mat-toolbar color="primary" class="menu">
     <img src="./assets/img/logo.png" width="190" height="50" alt="Godere logo">
     <span class="spacer"></span>
-    <button mat-icon-button color="accent" aria-label="icon-button with menu icon">
+    <button [matMenuTriggerFor]="menu" mat-icon-button color="accent" aria-label="icon-button with menu icon">
         <mat-icon>menu</mat-icon>
     </button>
+    <mat-menu #menu="matMenu">
+        <a href="#about-us" mat-menu-item>About Us</a>
+        <a href="#lego-pc" mat-menu-item>Lego Pc</a>
+        <a href="#multistation" mat-menu-item>Multi Workstation System</a>
+        <a href="#multiplay" mat-menu-item>Multiplay</a>
+        <a href="#contact" mat-menu-item>Contact</a>
+    </mat-menu>
 </mat-toolbar>

@@ -11,6 +11,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 // import { MatTableModule } from '@angular/material/table';
 // import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatListModule } from '@angular/material/list';
+import { MatMenu, MatMenuModule } from '@angular/material/menu';
 // import { MatBadgeModule } from '@angular/material/badge';
 // import { MatRadioModule } from '@angular/material/radio';
 // import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -35,6 +36,7 @@ import { MatListModule } from '@angular/material/list';
     // MatTableModule,
     // MatPaginatorModule,
     MatListModule,
+    MatMenuModule,
     // MatBadgeModule,
     // MatRadioModule,
     // MatProgressSpinnerModule,
