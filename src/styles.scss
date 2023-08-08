@@ -121,17 +121,6 @@ h1, h2, h3, h4 {
     line-height: 1;
     color: white;
   }
-  .mat-icon {
-    margin-right: 5px;
-    color: $color-primary;
-  }
-  .mat-icon--big {
-    height: 70px;
-    width: 70px;
-    font-size: 70px;
-    margin-bottom: 10px;
-    color: $color-primary;
-  }
 }
 .multi-workstation {
   background: #fafafa;
@@ -178,16 +167,13 @@ button.mat-button {
   padding: 10px 25px;
   border: 2px solid $color-primary;
 }
-
 .spacer {
   flex: 1 1 auto;
 }
-
 .mat-icon-button {
   position: relative;
   z-index: 1;
 }
-
 .mat-menu-content {
   box-shadow: 0 0 15px rgba(0,0,0,.3);
   background-color: black;
@@ -202,6 +188,17 @@ button.mat-button {
   a:hover {
     background: #222;
   }
+}
+.mat-icon {
+  margin-right: 5px;
+  color: $color-primary;
+}
+.mat-icon--big {
+  height: 70px;
+  width: 70px;
+  font-size: 70px;
+  margin-bottom: 10px;
+  color: $color-primary;
 }
 
 // Scrollbar
