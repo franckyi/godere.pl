@@ -136,8 +136,11 @@ h1, h2, h3, h4 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position-x: right;
+    background-position-x: center;
     min-height: 640px;
+  }
+  @media screen and (min-width: 992px) {
+    background-position-x: right;
   }
 }
 .contact {
@@ -181,17 +184,27 @@ h1, h2, h3, h4 {
 button.mat-button {
   padding: 10px 25px;
   border: 2px solid $color-primary;
-  a,
+  transition: all 1s;
+  &:hover {
+    background: $color-primary;
+    color: white;
+    a,
     a:focus,
     a:focus-visible,
     a:active,
     a:visited {
-      color: $color-primary;
-      text-decoration: none;
+      color: white;
     }
-    a:hover {
-      color: $color-primary;
-    }
+  }
+  a,
+  a:focus,
+  a:focus-visible,
+  a:active,
+  a:visited {
+    color: $color-primary;
+    text-decoration: none;
+  }
+  
 }
 .spacer {
   flex: 1 1 auto;
