@@ -1,19 +1,19 @@
 <div class="row customize p-5">
     <h2 class="mat-title my-5">Customize your Lego PC basing on your needs. Choose:</h2>
 
-    <mat-list class="col-lg mat-typography text-white">
+    <mat-list class="col-lg mat-typography text-white lh-sm">
         <mat-icon class="mat-icon--big">settings_suggest</mat-icon>
-        <mat-list-item *ngFor="let item of col1List"><mat-icon matListItemIcon>check_circle_outline</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
+        <mat-list-item *ngFor="let item of col1List" class="mb-5"><mat-icon matListItemIcon>check_circle_outline</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
     </mat-list>
 
-    <mat-list class="col-lg mat-typography">
+    <mat-list class="col-lg mat-typography lh-sm">
         <mat-icon class="mat-icon--big">usb</mat-icon>
-        <mat-list-item *ngFor="let item of col2List"><mat-icon matListItemIcon>check_circle_outline</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
+        <mat-list-item *ngFor="let item of col2List" class="mb-5"><mat-icon matListItemIcon>check_circle_outline</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
     </mat-list>
 
-    <mat-list class="col-lg mat-typography">
+    <mat-list class="col-lg mat-typography lh-sm">
         <mat-icon class="mat-icon--big">hub</mat-icon>
-        <mat-list-item *ngFor="let item of col3List"><mat-icon matListItemIcon>check_circle_outline</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
+        <mat-list-item *ngFor="let item of col3List" class="mb-5"><mat-icon matListItemIcon>check_circle_outline</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
     </mat-list>
 
 </div>
