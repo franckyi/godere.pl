@@ -82,6 +82,8 @@ h1, h2, h3, h4 {
 .hero {
   display: flex;
   background: url(./assets/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   overflow: hidden;
   justify-content: center;
