@@ -8,30 +8,30 @@ import { Component, OnInit } from '@angular/core';
 export class CustomizeComponent implements OnInit {
 
   col1List = [
-    'Size and shape of the Lego-made case',
-    'color of LEGO bricks',
-    'the material of the Lego PC motherboard (steel, aluminum, acrylic glass-PMMA)',
-    'computer components available on the market',
-    'arrangement of components',
-    'cooling components (water, air, combined cooling)',
-    'way of starting the computer (wireless, button, combined)',
-    'optimal computer noise (dB)',
-    'additional backlight'
+    'wymiar oraz kształt obudowy z klocków LEGO',
+    'kolor klocków LEGO',
+    'materiał z którego będzie zbudowana rama Lego PC (stal, aluminium, szkło akrylowe-PMMA)',
+    'podzespoły komputerowe dostępne na rynku',
+    'arraułożenie podzespołów',
+    'chłodzenie podzespołów komputerowych (chłodzenie wodne, powietrzem, łączone)',
+    'sposób uruchomienia komputera (bezprzewodowo, przycisk, łączony)',
+    'optymalną głośność pracy komputera (dB)',
+    'dodatkowe podświetlenie'
   ];
 
   col2List = [
-    'number of USB ports',
-    'location of USB ports in the housing made of Lego blocks',
-    'location of the audio connector: microphone input / headphone audio output',
-    'location of the graphics card connectors (HDMI, mini-HDMI, Displayport, DVI-I)',
-    'location of the induction charging of the telephone',
-    '10 ”LCD panel displaying information about the computer\'s operating parameters',
-    'adding controllers (pads, steering wheel, joystick)'
+    'ilość portów USB',
+    'umiejscowienie portów USB w obudowie z klocków Lego',
+    'umiejscowienie złącza audio: wejście mikrofonowe / wyjście audio słuchawkowe',
+    'umiejscowienie złącz karty graficznej (HDMI, mini-HDMI, Displayport, DVI-I)',
+    'umiejscowienie ładowania indukcyjnego telefonu',
+    'panel LCD 10” wyświetlający informacji o parametrach pracy komputera',
+    'dodatkowe kontrolery ( pady, kierownica, joystick )'
   ];
 
   col3List = [
-    'purpose of the computer: one off Lego case computer / Multi-workstation',
-    'number of required positions',
+    'przeznaczenie komputera: indiwidualne / Multi-station',
+    'ilość potrzebnych stanowisk',
   ];
   
   constructor() { }

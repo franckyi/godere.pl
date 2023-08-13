@@ -8,7 +8,6 @@ import { NavComponent } from './components/shared/nav/nav.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { HeroComponent } from './components/shared/hero/hero.component';
 import { CarouselComponent } from './components/shared/carousel/carousel.component';
-import { ContactComponent } from './views/contact/contact.component';
 import { MaterialModule } from './modules/material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './components/shared/about/about.component';
@@ -27,7 +26,6 @@ import { GrondBlackComponent } from './views/works/grond-black/grond-black.compo
     FooterComponent,
     HeroComponent,
     CarouselComponent,
-    ContactComponent,
     AboutComponent,
     CustomizeComponent,
     MultiWorkstationComponent,

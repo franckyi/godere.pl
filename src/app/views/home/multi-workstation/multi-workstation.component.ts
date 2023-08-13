@@ -13,12 +13,12 @@ export class MultiWorkstationComponent implements OnInit {
   }
 
   advantages = [
-    'One central unit, built with Lego bricks',
-    'Saving space in rooms where the other blocks are located',
-    'Saved money',
-    'Comfort for all users',
-    'Possible work on all positions at the same time',
-    'Utilization of the performance potential of the central unit to the highest degree '
+    'Jedna jednostka centralna, zbudowana w klocków Lego',
+    'Zaoszczędzone miejsce w pomieszczeniach, w których są stanowiska',
+    'Zaoszczędzone pieniądze',
+    'Komfort wszystkich użytkowników',
+    'Możliwa praca na wszystkich stanowiskach jednocześnie',
+    'Wykorzystanie potencjału wydajnościowego jednostki centralnej w najwyższym stopniu'
   ]
 
 }

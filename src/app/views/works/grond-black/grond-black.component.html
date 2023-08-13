@@ -2,15 +2,13 @@
   <div class="row grond-black p-5 text-center">
     <h2 id="start">GROND PC / Black Edition</h2>
     <img class="col-md" src="./assets/img/left.png" alt="Demo images of Grond Black">
-    <p class="col-md text-white my-5">
-        Grond PC Black Edition was a huge challenge for us. It is a premium computer that combined the uniqueness of the case with the latest technologies. Grond PC has been designed for advanced and demanding users. Adequate performance for gaming, 3D design, FEM analysis, in original Lego housing. Used every day in the Multi – split system, it helps the family work from home and provides entertainment in the highest 4K resolution.
-    </p>
+    <p class="col-md text-white my-5">Grond PC Black Edition był dla nas ogromnym wyzwaniem. To komputer klasy premium, który połączył oryginalność obudowy razem z najnowszymi technologiami. Grond PC został zaprojektowany dla zaawansowanych i wymagających użytkowników. Odpowiednia wydajność do grania, projektowania 3D, analizy MES, w oryginalnej obudowie z klocków Lego. Wykorzystywany na co dzień w systemie Multi – split pomaga rodzinie pracować w domu oraz dostarcza rozrywkę w najwyższej rozdzielczości 4K.</p>
     <img class="col-md" src="./assets/img/right.png" alt="Demo images of Grond Black">
   </div>
   <div class="row bg-light p-5">
       <img class="triptic" src="./assets/img/super-computers.png" alt="Demo images of Grond Black">
-      <h2 class="text-center my-5">Unlimited power in 1500+ LEGO bricks</h2>
-      <p class="col-md-6 mx-auto mb-5"><span class="mat-body-strong">Grond PC <em>Black edition</em></span> was built from over 1500 Lego bricks . We distanced ourselves from the building of standard computers to embrace custom-built ones that have a modern housing and a very unique touch. The unique design allows the housing to be adapted to the needs of the customer and enables the configuration of the selected hardware. The fascinating form combined with the most modern components available on the market, stimulates the imagination and creates a huge range of possibilities when designing Lego Computers.</p>
+      <h2 class="text-center my-5">Nieograniczona moc w 1500+ klockach LEGO</h2>
+      <p class="col-md-6 mx-auto mb-5"><span class="mat-body-strong">Grond PC <em>Black edition</em></span> został zbudowany z <span class="mat-body-strong">ponad 1500 klocków Lego</span>. Odstąpienie od standardowych zasad budowy komputera PC pozwoliło na stworzenie nowoczesnej obudowy oraz nadanie jej wyjątkowego charakteru. <span class="mat-body-strong">Unikalny design</span> umożliwia dostosowanie obudowy do <span class="mat-body-strong">indywidualnych potrzeb i wybranej konfiguracji sprzętowej</span>. Fascynująca, odbiegająca od klasycznej konstrukcji forma w połączeniu z najnowocześniejszymi dostępnymi na rynku podzespołami działa na wyobraźnię i stwarza ogromny wachlarz możliwości podczas projektowania Lego PC.</p>
   </div>
 
   <div class="row">
@@ -46,13 +44,13 @@
       </button>
     </div>
     <mat-list class="col-md-8 mat-typography">
-      <h2 class="my-5">Technical specifications</h2>
+      <h2 class="my-5">Specyfikacja techniczna</h2>
       <mat-list-item *ngFor="let item of componentList" class="mb-5"><mat-icon matListItemIcon>check_circle_outline</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
     </mat-list>
   </div>
 
   <div class="row p-5 water-cooling">
-    <h2 class="my-5">Water Cooling</h2>
+    <h2 class="my-5">Chłodzenie wodne</h2>
     <mat-list class="col-md-6 lh-sm">
       <mat-list-item *ngFor="let item of coolingCol1" class="mb-5"><mat-icon matListItemIcon>wind_power</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
     </mat-list>
@@ -62,7 +60,8 @@
   </div>
 
   <div class="row p-5 water-cooling-system">
-    <h2 class="my-5">Water Cooling System</h2>
+    <h2 class="my-5">System chłodzenia wodnego</h2>
+    <p>Aby zwiększyć jego potencjał oraz możliwości zainstalowaliśmy chłodzenie wodne, które pozwoli na:</p>
     <mat-list class="col-md-8 lh-sm">
       <mat-list-item *ngFor="let item of coolingSystemList" class="mb-5"><mat-icon matListItemIcon>air</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
     </mat-list>
@@ -71,11 +70,11 @@
 
   <div class="row p-5 subcomponents">
     <mat-list class="col-md-6 mat-typography">
-      <h2 class="my-5">Sub-components</h2>
+      <h2 class="my-5">Elementów</h2>
       <mat-list-item *ngFor="let item of coolingComponentsCol1"><mat-icon matListItemIcon>memory</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
     </mat-list>
     <mat-list class="col-md-6 mat-typography">
-      <h2 class="my-5">Additional items</h2>
+      <h2 class="my-5">Dodaktowe elementy</h2>
       <mat-list-item *ngFor="let item of coolingComponentsCol2"><mat-icon matListItemIcon>memory</mat-icon><div matListItemTitle>{{item}}</div></mat-list-item>
     </mat-list>
   </div>
